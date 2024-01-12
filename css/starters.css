@@ -1,0 +1,142 @@
+h1{
+  font-size:28px;
+}
+
+h2{
+  font-size:20px;
+  /* font-weight: normal; */
+}
+
+.County-dish > div > div p:nth-child(1){
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.County-dish > div > div p:nth-child(){
+  font-size: 16px;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+.County-dish > div > div p:nth-child(3){
+  font-size: 16px;
+  font-style: italic;
+}
+
+.starters-county > div > p{
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.starters-county > div p:nth-child(2){
+  font-size: 16px;
+  opacity: 0.5;
+  font-style: italic;
+}
+
+.starters-county > div p:nth-child(3){
+  font-size: 16px;
+  font-style: italic;
+  opacity: 0.7;
+}
+
+.viewport-img-starter-homepage {
+  background: url(../images/starters/naslovnicastarters_crop.jpeg) center
+    bottom/cover no-repeat;
+  height: 93vh;
+}
+
+.food-menu {
+  display: flex;
+  color: black;
+  /* margin: 5px 0 0 0; */
+  justify-content: center;
+  background-color: white;
+  height: 13vh;
+  border: none;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  align-items: center;
+  margin-top: -13vh;
+  padding: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 7vh;
+  z-index: 10;
+  pointer-events: visible;
+}
+
+.food-menu li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-left: 25px;
+  margin-right:25px;
+}
+
+.food-menu a{
+  color: black;
+  font-variant: small-caps;
+  font-size: 14px;
+}
+
+.regions img {
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  margin-top: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  margin-bottom: 25px;
+}
+
+.regions {
+  text-align: center;
+}
+
+.County-dish div:nth-child(2) img {
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+/* .dish {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  } */
+
+.County-dish {
+  display: flex;
+}
+
+.County-dish > div{
+  flex:1;
+}
+
+.County-dish img {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.starters-county{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+ 
+  height: 80vh;
+}
+
+.gyoco1{
+  width: 120%;
+  margin:0;
+}
+
+/* div .starters-county:nth-child(5) div p:nth-child(3){
+  margin-bottom: 0;
+} */

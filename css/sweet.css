@@ -1,0 +1,125 @@
+/* h4{
+  font-size: 20px;
+  opacity: 0.7;
+} */
+.sweet-dish > div p:nth-child(1) {
+  font-size: 16px;
+  opacity: 0.7;
+}
+.sweet-dish > div p:nth-child(2) {
+  font-size: 16px;
+  opacity: 0.5;
+  font-style: italic;
+}
+.sweet-dish > div p:nth-child(3) {
+  font-size: 16px;
+  font-style: italic;
+}
+.viewport-img-sweet-homepage {
+  background: url(../images/slatko/naslovnica\ slatkog\ menija_crop.jpg) center
+   bottom/cover no-repeat;
+  height: 93vh;
+}
+
+.food-menu {
+  display: flex;
+  color: black;
+  /* margin: 5px 0 0 0; */
+  justify-content: center;
+  background-color: white;
+  height: 13vh;
+  border: none;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  align-items: center;
+  margin-top: -13vh;
+  padding: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 7vh;
+  z-index: 10;
+}
+
+.food-menu li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-left: 25px;
+  margin-right:25px;
+}
+
+.food-menu a{
+  color: black;
+  font-variant: small-caps;
+  font-size: 14px;
+}
+
+.regions img {
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  margin-top: 50px;
+  display: block;
+  margin-bottom: 50px;
+}
+
+.regions {
+  text-align: center;
+}
+
+.sweet-dish {
+  height: 80vh;
+  display: flex;
+}
+
+.sweet-dish > div {
+  flex: 1;
+
+}
+.sweet-dish img {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sweet-dish div:nth-child(2) img {
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.smokva-maslina {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.smokva-maslina img:nth-child(1) {
+  align-self: flex-start;
+  height: 170px;
+  width: 120px;
+  margin-top: -60px;
+}
+
+.smokva-maslina img:nth-of-type(2) {
+  align-self: flex-end;
+  margin-top: -60px;
+  height: 200px;
+  width: 150px;
+}
+
+.smokva-maslina div > p {
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.smokva-maslina div p:nth-child(2) {
+  font-size: 16px;
+  opacity: 0.5;
+  font-style: italic;
+}
+
+.smokva-maslina div p:nth-child(3) {
+  font-size: 16px;
+  font-style: italic;
+}

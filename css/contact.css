@@ -1,0 +1,332 @@
+
+.contact-box p{
+  font-size: 20px;
+  /* color: #000; */
+  font-family: "Libre Baskerville", serif;
+  line-height: 1.5;
+}
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 24px;
+  /* font-weight: normal; */
+  text-transform: uppercase;
+}
+.initial-text p,
+.regions p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+.dish > div p:nth-child(2) {
+  font-style: italic;
+  opacity: 0.5;
+}
+.dish > div p:nth-child(3) {
+  font-style: italic;
+}
+
+.dish-2 div p:nth-child(2) {
+  font-style: italic;
+  opacity: 0.5;
+}
+.dish-2 div p:nth-child(3) {
+  font-style: italic;
+}
+
+.viewport-img-contact-homepage {
+  background: url(../images/contact/Veranda\ II-297.jpg) center bottom/cover
+    no-repeat;
+  height: 93vh;
+}
+
+.food-menu {
+  /* font-size: 20px; */
+  display: flex;
+  color: black;
+  justify-content: center;
+  background-color: white;
+  height: 13vh;
+  border: none;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  align-items: center;
+  margin-top: -13vh;
+  padding-left: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 7vh;
+  z-index: 1;
+  /* z index sam dodala  zbog opacityja je rmi onda tekst prolazi iznad food menija i vidi se sav tekst */
+}
+
+.food-menu li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-left: 50px;
+  margin-right: 0px;
+}
+.food-menu a {
+  color: black;
+}
+
+.initial-text {
+  text-align: center;
+  margin-bottom: 60px;
+  height: 80vh;
+}
+
+.initial-text h1 {
+  margin-bottom: 60px;
+  font-style: italic;
+  color: orange;
+  margin-top: 80px;
+  font-size: 32px;
+}
+
+.menu-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-icons > div {
+  margin: 30px;
+}
+
+.menu-icons div p {
+  color: black;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.menu-icons > div:nth-child(4) > p {
+  margin-top: 5px;
+}
+
+.county-fun-facts {
+  display: flex;
+  justify-content: space-evenly;
+  /* prije je tu bilo center a dole margin-left right */
+}
+.county-fun-facts div {
+  /* margin-left: 60px;
+    margin-right: 60px; */
+}
+
+.regions img {
+  /* height: 250px; */
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  margin-top: 50px;
+  display: block;
+  /* margin-left: auto;
+    margin-right: auto; */
+  width: 25%;
+  margin-bottom: 50px;
+}
+.regions {
+  text-align: center;
+}
+
+.dish-2:first-child img {
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.dish {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.dish-2 {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
+}
+.Istria-dish {
+  display: flex;
+}
+
+.Istria-dish img {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-turkey {
+  height: 55%;
+}
+
+.image-S-D-c {
+  background: url(./images/maincourse/splitnovi.1.jpg) center bottom/contain
+    no-repeat;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* margin-left:120px;
+    margin-right: 120px; */
+  /* margin-top: 7px;
+    margin-bottom: 7px; */
+}
+
+.image-D-N-c {
+  background: url(./images/maincourse/dubrovniknovi1.jpg) center top/contain
+    no-repeat;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.image-I-P-c {
+  background: url(./images/maincourse/istraipag.jpg) center bottom/contain
+    no-repeat;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* margin-left:120px;
+      margin-right: 120px; */
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.image-C-C {
+  background: url(./images/maincourse/kontinentalnova1.jpg) center top/contain
+    no-repeat;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.image-H {
+  background: url(./images/maincourse/hercegovina1.jpg) center top/contain
+    no-repeat;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.goat-tomato {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.goat-tomato img:nth-child(1) {
+  align-self: flex-end;
+  height: 120px;
+  width: 170px;
+}
+.goat-tomato img:nth-of-type(2) {
+  align-self: flex-start;
+  margin-top: -60px;
+  height: 200px;
+  width: 150px;
+}
+.goat-tomato p {
+  font-style: italic;
+  opacity: 0.5;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+
+  margin-top: -13vh;
+  width: 100%;
+  height: 13vh;
+  position: absolute;
+}
+
+.contact-box p {
+  color: #000;
+  margin: 0;
+}
+.contact-box img {
+  /* height: 35px;
+  width: 35px; */
+}
+
+.contact-box > a:nth-child(1) img:hover {
+  content: url("../images/homepage.materijal/Property\ 1=Variant2.jpg");
+}
+
+.veranda-box > a:nth-child(3) img:hover {
+  content: url("../images/homepage.materijal/Property\ 1=Variant2\ \(2\).jpg");
+}
+
+
+.fb-inst {
+  /* display: inline-block; */
+  text-align: center;
+  /* height: 93vh; */
+
+}
+.fb-inst img {
+  margin-left: 30px;
+  margin-right: 30px;
+  /* width: 35px;
+  height: 3px; */
+  margin-bottom: 100px;
+}
+.fb{
+  width: 30px;
+  height: 35px;
+}
+
+.phone{
+  width: 31px;
+  height: 35px;
+  margin-bottom: 5px;
+}
+
+.mail{
+  margin-bottom: 5px;
+}
+
+.contact-location-container{
+  height: 93vh;
+  margin-top:100px;
+}
+
+
+.fb-inst > a:nth-child(1) img:hover {
+  content: url("../images/homepage.materijal/fbpressed.jpg");
+}
+.fb-inst > a:nth-child(2) img:hover {
+  content: url("../images/homepage.materijal/instapressed.jpg");
+}
+.fb-inst > a:nth-child(3) img:hover {
+  content: url("../images/homepage.materijal/tripadvhov.jpg");
+}
+

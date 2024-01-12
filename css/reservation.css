@@ -1,0 +1,31 @@
+.reservation-container {
+  height: 93vh;
+  display: flex;
+  margin-top: 7vh;
+  align-items: center;
+  background-color: white;
+}
+
+.img-reservation {
+  background: url(../images/rezervacija/slikarez.jpg) center center/cover
+    no-repeat;
+  height: 100%;
+  width: 100%;
+}
+.reservation-container > div:nth-child(1) {
+  flex: 2;
+}
+.reservation-container > div:nth-child(2) {
+  flex: 1;
+}
+
+.btn-warning {
+  background: #f0ad4e;
+  color: #fff;
+  border: 2px solid #f0ad4e;
+}
+
+#hors-hydra-8750c0c0-f349-11ea-84ce-e97786f1e792{
+  margin-left:-260px;
+ /* display: block; */
+}
