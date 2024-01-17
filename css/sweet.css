@@ -123,3 +123,8 @@
   font-size: 16px;
   font-style: italic;
 }
+
+.food-menu li:nth-child(4){
+  text-decoration: underline;
+  /* text-decoration-color: red; */
+}

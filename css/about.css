@@ -1,15 +1,9 @@
-h3 {
-  font-size: 24px;
-  opacity: 0.7;
-}
-
 .viewport-img-about-homepage {
   background: url(../images/about/naslovnica.jpg) center center/cover no-repeat;
   height: 93vh;
 }
 
 .about-memories {
-  font-size: 20px;
   display: flex;
   color: black;
   justify-content: center;
@@ -30,6 +24,7 @@ h3 {
 }
 
 .about-memories p {
+  font-size: 20px;
   margin: 0;
 }
 
@@ -52,16 +47,18 @@ h3 {
   /* height: 17%; */
   position: absolute;
   top: 20%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .about-box p {
   /* text-align: center; */
   margin: 0;
-  margin-right: 200px;
+  margin-right: 250px;
   font-family: "Libre Baskerville", serif;
-  font-size: 20px;
+
   margin-left: 50px;
 }
 
@@ -99,6 +96,8 @@ h3 {
   font-family: "Libre Baskerville", serif;
   font-size: 20px;
   margin-bottom: 0;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .beginning {
@@ -120,15 +119,90 @@ h3 {
 
 .beginning div:nth-child(2) {
   margin-top: auto;
-  margin-bottom: auto;;
+  margin-bottom: auto;
 }
 
-.imgg {
+.img_1 {
   height: 100vh;
   /* margin-bottom: 50px; */
   background: url(../images/about/Veranda\ II-290.jpg) center center/cover
     no-repeat;
 }
+.img_2 {
+  height: 100vh;
+  /* margin-bottom: 50px; */
+  background: url(../images/aboutsve/tetkaNev.jpg) center top/cover no-repeat;
+  position: relative;
+}
+.img_Nevenka {
+  background: url(../images/aboutsve/tetkaN.jpg) center top/cover no-repeat;
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  width: 280px;
+  height: 65vh;
+  border: none;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  /* opacity: 0.7; */
+}
+
+.mama {
+  /* background-color:rgb(85,107,47); */
+  /* background-color:rgb(99,125,55); */
+  background-color: rgb(57, 72, 31);
+  width: 45%;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+h3 {
+  margin-top: 20px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.mama div:nth-child(2) {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+.mama div:nth-child(2) p {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.mama div:nth-child(1) p {
+  /* padding-left: 20px;
+padding-bottom: 20px; */
+  padding: 20px;
+  padding-top: 40px;
+  margin-bottom: 0;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.img_Luka {
+  height: auto;
+  width: 100%;
+}
+/* .img_Luka{
+  background: url(../images/aboutsve/luka.jpg) center
+  top/cover no-repeat;
+} */
+/* .welcome-image {
+  background: url(../images/homepage.materijal/hptekstpozadina-2.jpg) center
+    top/cover no-repeat;
+
+} */
 
 /* @media (max-width: 767px){
   .fh5co-nav ul{
@@ -136,6 +210,3 @@ h3 {
 
   }
 } */
-
-
-

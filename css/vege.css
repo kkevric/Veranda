@@ -35,7 +35,6 @@
   height: 93vh;
 }
 
-
 .food-menu {
   display: flex;
   color: black;
@@ -60,11 +59,10 @@
   margin: 0;
   list-style: none;
   margin-left: 25px;
-  margin-right:25px;
- 
+  margin-right: 25px;
 }
 
-.food-menu a{
+.food-menu a {
   color: black;
   font-variant: small-caps;
   font-size: 14px;
@@ -97,21 +95,40 @@
 
   /* background-color: green; */
   position: relative;
-
 }
-.vege-dish-1>div{
+.vege-dish-1 > div {
   display: flex;
   column-gap: 70px;
-  justify-content: center;
-  margin-bottom: 60px;
-
-  background-color: green;
-
 }
-.vege-dish-1 div:nth-child(2) > div{
-flex:1;
-/* margin-left:50px;
-margin-right: 50px; */
+.vege-dish-1 > div:nth-child(2){
+  margin-bottom:60px;
+}
+.vege-dish-1 > div:nth-child(4){
+  margin-bottom:60px;
+}
+
+.vege-dish-1 > div > div {
+  flex: 1;
+}
+
+/* .vege-dish-1 div:nth-child(1) > div:nth-child(1) {
+  padding-left: 100px;
+}
+.vege-dish-1 div:nth-child(1) > div:nth-child(3) {
+  padding-right: 100px;
+} */
+
+.vege-dish-1 > div:nth-child(1) > div:nth-child(1) {
+  padding-left: 100px;
+}
+.vege-dish-1 > div:nth-child(2) > div:nth-child(1) {
+  padding-left: 100px;
+}
+.vege-dish-1 > div:nth-child(1) > div:nth-child(3) {
+  padding-right: 100px;
+}
+.vege-dish-1 > div:nth-child(2) > div:nth-child(3) {
+  padding-right: 100px;
 }
 
 .sir {
@@ -171,8 +188,6 @@ margin-right: 50px; */
   margin: 0;
 }
 
-
-
 /* .smokva-maslina {
   display: flex;
   justify-content: center;
@@ -191,3 +206,8 @@ margin-right: 50px; */
   height: 200px;
   width: 150px;
 } */
+
+.food-menu li:nth-child(3) {
+  text-decoration: underline;
+  /* text-decoration-color: red; */
+}

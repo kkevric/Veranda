@@ -100,3 +100,8 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.food-menu li:nth-child(5){
+  text-decoration: underline;
+  /* text-decoration-color: red; */
+}

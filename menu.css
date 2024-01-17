@@ -1,41 +1,40 @@
-
-h1{
-  font-size:28px;
+h1 {
+  font-size: 28px;
 }
 
-h2{
-  font-size:20px;
+h2 {
+  font-size: 20px;
   /* font-weight: normal; */
   text-transform: uppercase;
   line-height: 1.5;
 }
 
-h3{
-  font-size:20px;
+h3 {
+  font-size: 20px;
   opacity: 0.7;
 }
 
 .initial-text p,
-.regions p{
+.regions p {
   font-size: 16px;
   line-height: 1.5;
 }
 
-.dish >div p:nth-child(2){
+.dish > div p:nth-child(2) {
   font-style: italic;
   opacity: 0.5;
 }
 
-.dish >div p:nth-child(3){
+.dish > div p:nth-child(3) {
   font-style: italic;
 }
 
-.dish-2 div p:nth-child(2){
+.dish-2 > div p:nth-child(2) {
   font-style: italic;
   opacity: 0.5;
 }
 
-.dish-2 div p:nth-child(3){
+.dish-2 > div p:nth-child(3) {
   font-style: italic;
 }
 
@@ -69,10 +68,10 @@ h3{
   margin: 0;
   list-style: none;
   margin-left: 25px;
-  margin-right:25px;
+  margin-right: 25px;
 }
 
-.food-menu a{
+.food-menu a {
   color: black;
   font-variant: small-caps;
   font-size: 14px;
@@ -88,7 +87,7 @@ h3{
   margin-bottom: 60px;
   font-style: italic;
   color: orange;
-  margin-top:80px;
+  margin-top: 80px;
 }
 
 .menu-icons {
@@ -118,13 +117,13 @@ h3{
 }
 
 .county-fun-facts div {
-flex:1;
+  flex: 1;
 }
 
 .regions {
   text-align: center;
-  margin-left:80px;
-  margin-right:80px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .regions img {
@@ -138,7 +137,6 @@ flex:1;
   width: 25%;
   margin-bottom: 50px;
 }
-
 
 .dish-2:first-child img {
   border-bottom-left-radius: 0px;
@@ -172,7 +170,7 @@ flex:1;
   margin-right: auto;
 }
 
-.img-turkey{
+.img-turkey {
   height: 50%;
 }
 
@@ -185,7 +183,6 @@ flex:1;
   justify-content: space-around;
   /* margin-left:120px;
   margin-right: 120px; */
-
 }
 
 .image-D-N-c {
@@ -195,7 +192,6 @@ flex:1;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-
 }
 
 .image-I-P-c {
@@ -207,8 +203,6 @@ flex:1;
   justify-content: space-around;
   /* margin-left:90px;
   margin-right: 90px; */
- 
- 
 }
 
 .image-C-C {
@@ -234,7 +228,7 @@ flex:1;
 .goat-tomato {
   display: flex;
   justify-content: center;
-  margin-top:100px;
+  margin-top: 100px;
 }
 
 .goat-tomato img:nth-child(1) {
@@ -245,35 +239,48 @@ flex:1;
 
 .goat-tomato img:nth-of-type(2) {
   align-self: flex-start;
-  margin-top:-60px;
+  margin-top: -60px;
   height: 200px;
   width: 150px;
 }
 
-.goat-tomato p:nth-child(2){
+.goat-tomato p:nth-child(2) {
   font-style: italic;
   opacity: 0.5;
 }
 
 @media screen and (max-width: 768px) {
-  .food-menu a{
+  .food-menu a {
     font-size: 12px;
   }
   .initial-text p,
-.regions p{
+  .regions p {
     font-size: 14px;
   }
-  h1{
+  h1 {
     font-size: 18px;
   }
-  h2{
+  h2 {
     font-size: 16px;
   }
-  h3{
+  h3 {
     font-size: 16px;
   }
-  .menu-icons div p{
+  .menu-icons div p {
     font-size: 12px;
   }
 }
 
+.food-menu li:nth-child(2) {
+  text-decoration: underline;
+  /* text-decoration-color: red; */
+}
+
+.ketikaproba {
+  text-decoration: underline;
+
+  color: red;
+}
+.fh5co-nav p:not(.ketikaproba) {
+  color: black;
+}

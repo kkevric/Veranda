@@ -1,40 +1,50 @@
-h1{
-  font-size:28px;
+h1 {
+  font-size: 28px;
 }
 
-h2{
-  font-size:20px;
+h2 {
+  font-size: 20px;
   /* font-weight: normal; */
 }
 
-.County-dish > div > div p:nth-child(1){
+.County-dish > div > div p:nth-child(1) {
   font-size: 16px;
   opacity: 0.7;
 }
 
-.County-dish > div > div p:nth-child(){
+.County-dish > div > div p:nth-child() {
   font-size: 16px;
   font-style: italic;
   opacity: 0.5;
 }
 
-.County-dish > div > div p:nth-child(3){
+.County-dish > div > div p:nth-child(3) {
   font-size: 16px;
   font-style: italic;
 }
 
-.starters-county > div > p{
+.starters-county > div > p {
   font-size: 16px;
   opacity: 0.7;
 }
 
-.starters-county > div p:nth-child(2){
+.starters-county > div p:nth-child(1) {
+  height: 40px;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.starters-county > div p:nth-child(2) {
   font-size: 16px;
   opacity: 0.5;
   font-style: italic;
+  height: 90px;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.starters-county > div p:nth-child(3){
+.starters-county > div p:nth-child(3) {
   font-size: 16px;
   font-style: italic;
   opacity: 0.7;
@@ -71,10 +81,10 @@ h2{
   margin: 0;
   list-style: none;
   margin-left: 25px;
-  margin-right:25px;
+  margin-right: 25px;
 }
 
-.food-menu a{
+.food-menu a {
   color: black;
   font-variant: small-caps;
   font-size: 14px;
@@ -114,8 +124,8 @@ h2{
   display: flex;
 }
 
-.County-dish > div{
-  flex:1;
+.County-dish > div {
+  flex: 1;
 }
 
 .County-dish img {
@@ -124,19 +134,24 @@ h2{
   margin-right: auto;
 }
 
-.starters-county{
+.starters-county {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
- 
+
   height: 80vh;
 }
 
-.gyoco1{
+.gyoco1 {
   width: 120%;
-  margin:0;
+  margin: 0;
 }
 
 /* div .starters-county:nth-child(5) div p:nth-child(3){
   margin-bottom: 0;
 } */
+
+.food-menu li:nth-child(1) {
+  text-decoration: underline;
+  /* text-decoration-color: red; */
+}
