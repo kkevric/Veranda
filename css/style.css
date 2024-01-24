@@ -18,7 +18,7 @@ body {
   font-family: "Libre Baskerville", serif;
   /* line-height: 1.7; */
   color: rgba(255, 255, 255, 0.3);
-  background: #000 url(../images/broken_noise.png) repeat;
+  background: white url(../images/broken_noise.png) repeat;
   /* width:1440px;
   margin-left: auto;
   margin-right: auto; */
@@ -26,7 +26,7 @@ body {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   body {
-    background: #000 url(../images/broken_noise.png) repeat;
+    background:white url(../images/broken_noise.png) repeat;
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

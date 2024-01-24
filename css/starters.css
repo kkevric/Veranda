@@ -6,50 +6,6 @@ h2 {
   font-size: 20px;
   /* font-weight: normal; */
 }
-
-.County-dish > div > div p:nth-child(1) {
-  font-size: 16px;
-  opacity: 0.7;
-}
-
-.County-dish > div > div p:nth-child() {
-  font-size: 16px;
-  font-style: italic;
-  opacity: 0.5;
-}
-
-.County-dish > div > div p:nth-child(3) {
-  font-size: 16px;
-  font-style: italic;
-}
-
-.starters-county > div > p {
-  font-size: 16px;
-  opacity: 0.7;
-}
-
-.starters-county > div p:nth-child(1) {
-  height: 40px;
-  max-width: 350px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.starters-county > div p:nth-child(2) {
-  font-size: 16px;
-  opacity: 0.5;
-  font-style: italic;
-  height: 90px;
-  max-width: 350px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.starters-county > div p:nth-child(3) {
-  font-size: 16px;
-  font-style: italic;
-  opacity: 0.7;
-}
-
 .viewport-img-starter-homepage {
   background: url(../images/starters/naslovnicastarters_crop.jpeg) center
     bottom/cover no-repeat;
@@ -105,53 +61,75 @@ h2 {
   text-align: center;
 }
 
-.County-dish div:nth-child(2) img {
+.County-two-dishes {
+  display: flex;
+}
+
+.County-two-dishes > div {
+  flex: 1;
+
+}
+
+.County-two-dishes img {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.County-two-dishes div:nth-child(2) img {
   border-bottom-right-radius: 50px;
   border-top-left-radius: 50px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
 }
 
-/* .dish {
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-  } */
-
-.County-dish {
-  display: flex;
+.County-two-dishes > div p:nth-child(1),
+.County-one-dish > div p:nth-child(1),
+.exception-dish > div p:nth-child(1) {
+  height: 40px;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.7;
 }
 
-.County-dish > div {
-  flex: 1;
-}
-
-.County-dish img {
-  width: 50%;
+.County-two-dishes > div p:nth-child(2),
+.County-one-dish > div p:nth-child(2),
+.exception-dish > div p:nth-child(2) {
+  opacity: 0.5;
+  font-style: italic;
+  max-width: 350px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .starters-county {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-
   height: 80vh;
+  margin-bottom: 50px;
 }
 
-.gyoco1 {
-  width: 120%;
-  margin: 0;
-}
-
-/* div .starters-county:nth-child(5) div p:nth-child(3){
+/* because if set margin, background is black*/
+.starters-county:last-child {
+  height: 100vh;
   margin-bottom: 0;
-} */
+}
 
 .food-menu li:nth-child(1) {
   text-decoration: underline;
   /* text-decoration-color: red; */
+}
+
+.exception-dish > div {
+  display: flex;
+}
+
+.exception-dish > div > div {
+  flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+.County-two-dishes {
+  flex-wrap: wrap;
+ 
+
+  }
 }

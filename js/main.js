@@ -305,6 +305,34 @@
     }
 
     $(".text-open").append(themessage);
+
+    // $(".gyoco").css("height", $(".gyoco2").height());
+  };
+
+  var zoomImageFunc = function () {
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var images = document.getElementsByClassName("myImages");
+    var modalImg = document.getElementById("modalImg");
+
+    for (var i = 0; i < images.length; i++) {
+      images[i].onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+      };
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    modal.onclick = function () {
+      modalImg.className += " out";
+      setTimeout(function () {
+        modal.style.display = "none";
+        modalImg.className = "modal-content";
+      }, 400);
+    };
   };
 
   $(function () {
@@ -321,6 +349,7 @@
     parallax();
     DateTimePickerFunc();
     showOpenness();
+    zoomImageFunc();
 
     $(".fh5co-bg-img").each(function () {
       $(this).css("width", "100%");
