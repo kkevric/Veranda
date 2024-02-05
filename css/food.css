@@ -49,7 +49,7 @@ p {
   margin: auto;
   display: block;
   width: 60%;
-  max-width: 60%;
+  /* max-width: 60%; */
 }
 
 .modal-content {
@@ -77,5 +77,12 @@ p {
   }
   to {
     transform: scale(0);
+  }
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+      width: 100%;
   }
 }

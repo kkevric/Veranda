@@ -70,9 +70,9 @@
 .regions img {
   border-bottom-left-radius: 50px;
   border-top-right-radius: 50px;
-  margin-top: 50px;
+  margin-top: 30px;
   display: block;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .regions {
@@ -88,10 +88,13 @@
 .vege-dish {
   height: 80vh;
   display: flex;
+  margin-bottom: 50px;
 }
 
 .vege-dish-1 {
   height: 80vh;
+  margin-left:50px;
+  margin-right:50px;
 
   /* background-color: green; */
   position: relative;
@@ -134,16 +137,20 @@
 .sir {
   position: absolute;
   /* background: url(../images/vege/sireviillu.jpg) center top/cover no-repeat; */
+  top: -5%;
+  width: 180px;
+
+
 }
 .fusili {
   position: absolute;
-  top: 45%;
+  top: 55%;
   right: 25%;
 }
 .tartufi {
   position: absolute;
-  top: 30%;
-  right: 5%;
+  top: 20%;
+  right: 0%;
 }
 /* .vege-dish-1 > div {
   flex-basis: 33.333333%;

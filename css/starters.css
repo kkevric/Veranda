@@ -49,12 +49,12 @@ h2 {
 .regions img {
   border-bottom-left-radius: 50px;
   border-top-right-radius: 50px;
-  margin-top: 25px;
+  margin-top: 30px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 25%;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .regions {
@@ -67,7 +67,6 @@ h2 {
 
 .County-two-dishes > div {
   flex: 1;
-
 }
 
 .County-two-dishes img {
@@ -85,11 +84,19 @@ h2 {
 .County-two-dishes > div p:nth-child(1),
 .County-one-dish > div p:nth-child(1),
 .exception-dish > div p:nth-child(1) {
-  height: 40px;
   max-width: 350px;
   margin-left: auto;
   margin-right: auto;
   opacity: 0.7;
+}
+
+.County-two-dishes > div p:nth-child(1),
+.exception-dish > div p:nth-child(1) {
+  height: 40px;
+}
+
+.County-one-dish > div p:nth-child(1) {
+  height: 30px;
 }
 
 .County-two-dishes > div p:nth-child(2),
@@ -105,6 +112,8 @@ h2 {
 .starters-county {
   height: 80vh;
   margin-bottom: 50px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 /* because if set margin, background is black*/
@@ -127,9 +136,11 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
-.County-two-dishes {
-  flex-wrap: wrap;
- 
-
+  .County-two-dishes {
+    flex-direction: column;
+   
+  }
+  .starters-county{
+    height: 160vh;
   }
 }

@@ -47,7 +47,7 @@
   /* height: 17%; */
   position: absolute;
   top: 20%;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 20px;
   padding-right: 20px;
@@ -94,7 +94,7 @@
 .beginning p {
   text-align: center;
   font-family: "Libre Baskerville", serif;
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 0;
   padding-right: 20px;
   padding-left: 20px;
@@ -125,13 +125,24 @@
 .img_1 {
   height: 100vh;
   /* margin-bottom: 50px; */
-  background: url(../images/about/Veranda\ II-290.jpg) center center/cover
-    no-repeat;
+  background: url(../images/about/Veranda\ II-290.jpg) center top no-repeat;
+  background-size: 100vw 100vh;
+  min-height: 100vh;
 }
 .img_2 {
   height: 100vh;
   /* margin-bottom: 50px; */
-  background: url(../images/aboutsve/tetkaNev.jpg) center top/cover no-repeat;
+  background: url(../images/aboutsve/tetkaNev.jpg) center top no-repeat;
+  position: relative;
+  background-size: 100vw 100vh;
+  min-height: 100vh;
+}
+.img_4 {
+  height: 100vh;
+  /* margin-bottom: 50px; */
+  background: url(../images/aboutsve/mIm.jpg) center top no-repeat;
+  background-size: 100vw 100vh;
+  min-height: 100vh;
   position: relative;
 }
 .img_Nevenka {
@@ -149,12 +160,27 @@
 
   /* opacity: 0.7; */
 }
+.img_Mirko {
+  background: url(../images/aboutsve/mIa.jpg) center top/cover no-repeat;
+  position: absolute;
+  top: 55%;
+  right: 28%;
+  width: 230px;
+  height: 45vh;
+  border: none;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  /* opacity: 0.7; */
+}
 
 .mama {
   /* background-color:rgb(85,107,47); */
   /* background-color:rgb(99,125,55); */
   background-color: rgb(57, 72, 31);
-  width: 45%;
+  width: 40%;
   display: flex;
   position: absolute;
   top: 50%;
@@ -164,8 +190,34 @@
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
+.mirko {
+  /* background-color:rgb(85,107,47); */
+  /* background-color:rgb(99,125,55); */
+  
+  background-color: rgb(57, 72, 31);
+  width: 25%;
+
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.mirko > div{
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+.mirko p{
+  font-size: 13px;
+  
+}
 h3 {
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 0;
   text-align: center;
 }
@@ -174,7 +226,7 @@ h3 {
   text-orientation: upright;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .mama div:nth-child(2) p {
   margin-bottom: 10px;
@@ -184,24 +236,43 @@ h3 {
   /* padding-left: 20px;
 padding-bottom: 20px; */
   padding: 20px;
-  padding-top: 40px;
+  padding-top: 35px;
   margin-bottom: 0;
   color: white;
   text-transform: uppercase;
   font-size: 14px;
+ 
+}
+.mirko p,h3{
+  color: white;
+}
+.mirko >div p:nth-child(1){
+  text-transform: uppercase;
+  /* margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 35px */
+}
+.mirko >div p:nth-child(2){
+ 
+  /* margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 35px */
 }
 /* .img_Luka {
   height: auto;
   width: 100%;
 } */
-.img_Luka{
-  background: url(../images/aboutsve/lukasjenapozadina.png) center
-top/cover no-repeat;
-  height: 130vh;
+.img_3 {
+  background: url(../images/aboutsve/lukasjenapozadina.png) center top no-repeat;
+  background-size: 100vw 100vh;
+  min-height: 100vh;
   position: relative;
-
- 
- 
+}
+.img_5 {
+  background: url(../images/aboutsve/marinapozadinasjena.png) center top no-repeat;
+  background-size: 100vw 100vh;
+  min-height: 100vh;
+  position: relative;
 }
 /* .welcome-image {
   background: url(../images/homepage.materijal/hptekstpozadina-2.jpg) center
@@ -216,24 +287,38 @@ top/cover no-repeat;
   }
 } */
 
-.img_Luka p{
+.img_3 p,
+.img_5 p {
   color: orange;
 }
-.img_Luka{
+
+.img_3, 
+.img_5 {
   position: relative;
 }
-.img_Luka p:nth-child(2){
+.img_3 p:nth-child(2),
+.img_5 p:nth-child(2) {
   text-transform: uppercase;
 }
-.img_Luka p:nth-child(1){
-  margin-bottom: 0;}
+.img_3 p:nth-child(1) {
+  margin-bottom: 0;
+}
 
-.img_Luka > div:nth-child(1){
-  width:350px;
+.img_3 > div:nth-child(1)
+ {
+  width: 350px;
   height: 50vh;
   position: absolute;
-  top:30%;
-  left:7%;
+  top: 30%;
+  left: 7%;
+  padding-right: 30px;
+}
+.img_5 > div {
+  width: 350px;
+  height: 50vh;
+  position: absolute;
+  top: 15%;
+  right: 7%;
   padding-right: 30px;
 }
 /* .luka_slova{
@@ -243,22 +328,30 @@ top/cover no-repeat;
   left:60%;
 } */
 
-.luka_slova{
+.luka_slova {
   height: 25%;
   position: absolute;
-  right:38%;
-  top:15%;
+  right: 38%;
+  top: 15%;
 }
 @media screen and (max-width: 768px) {
-  .img_Luka > div{
+  .img_Luka > div {
     width: 300px;
     padding-right: 50px;
   }
 }
-.lukica{
-position: absolute;
-  top:50%;
+.lukica {
+  position: absolute;
+  top: 50%;
   right: 30%;
   border-radius: 50px;
   max-width: 400px;
+}
+.marina {
+  position: absolute;
+  top: 43%;
+  left: 7%;
+  border-radius: 50px;
+  max-width: 350px;
+ 
 }
