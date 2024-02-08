@@ -11,6 +11,7 @@
 img {
   border: solid;
   width: 100%;
+  border-radius: 40px;
 }
 
 p {
@@ -27,7 +28,7 @@ p {
 }
 
 .myImages:hover {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 /* The Modal (background) */
 .modal {
@@ -84,5 +85,9 @@ p {
 @media only screen and (max-width: 700px){
   .modal-content {
       width: 100%;
+  }
+  .gallery-container{
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
   }
 }

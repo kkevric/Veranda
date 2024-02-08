@@ -6,7 +6,7 @@
     margin-left: 100px;
     margin-right: 100px;
     /* margin-top:50px; */
-    background-color: white;
+ 
   }
   img {
     border: solid;
@@ -79,4 +79,13 @@
       transform: scale(0);
     }
   }
+
+  #fh5co-offcanvas{
+    height:100vh;
+  }
+
+  @media screen and (max-width: 480px) {
+   
+  }
+  
   

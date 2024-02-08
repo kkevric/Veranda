@@ -16,12 +16,10 @@
     font-style: italic;
   
   } */
-.wine-container div:nth-child(2){
+/* .wine-container div:nth-child(2) {
   z-index: 15;
-}
-.wine-container p {
-  font-size: 16px;
-}
+} */
+
 .viewport-img-wine-homepage {
   background: url(../images/wine/naslovnica_crop2.jpg) center center/cover
     no-repeat;
@@ -44,19 +42,18 @@
   position: -webkit-sticky;
   position: sticky;
   top: 7vh;
+  z-index: 10;
 }
 .food-menu a {
   color: black;
   font-variant: small-caps;
-  font-size: 14px;
 }
 .food-menu li {
   padding: 0;
   margin: 0;
   list-style: none;
   margin-left: 25px;
-  margin-right:25px;
- 
+  margin-right: 25px;
 }
 
 .wine-container > div > div {
@@ -92,16 +89,101 @@
   } */
 
 .wine-video {
-  width: 1200px;
+  width: 1000px;
   height: 1000px;
   margin-top: 100px;
-
+  margin-bottom: 50px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.food-menu li:nth-child(5){
+.food-menu li:nth-child(5) {
   text-decoration: underline;
   /* text-decoration-color: red; */
+}
+.wine-text {
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.wine-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wine-images img {
+  border: solid;
+  width: 100%;
+}
+.wine-images img:first-of-type {
+  grid-area: 1 / 1 / 2 / 3;
+}
+.wine-images img:nth-child(2) {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.wine-images img:last-of-type {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+@media screen and (max-width: 768px) {
+  .food-menu a {
+    font-size: 10px;
+  }
+  .food-menu li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .food-menu {
+    top: 0vh;
+  }
+  /* .wine-container  p {
+
+    width: 100px;
+   
+} */
+}
+
+@media screen and (max-width: 480px) {
+  .wine-container {
+    flex-direction: column-reverse;
+    row-gap: 40px;
+    height: auto;
+  }
+
+  .wine-container div img {
+    width: 80%;
+  }
+
+  .wine-container > div:nth-child(2) > div {
+    /* margin-left:50px;
+    margin-right:50px; */
+    width: 350px;
+  }
+
+  .wine-container div:nth-child(2) p:nth-child(1) {
+    margin-top: 0;
+  }
+  .wine-video {
+    width: 80%;
+    height: 50vh;
+  }
+
+  .wine-images {
+    width: 80%;
+  }
+  .wine-container div img {
+    height: auto;
+  }
 }

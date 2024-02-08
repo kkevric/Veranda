@@ -10,13 +10,12 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
-  opacity: 0.7;
+  
 }
 
 .initial-text p,
 .regions p {
-  font-size: 16px;
+ 
   line-height: 1.5;
 }
 
@@ -81,8 +80,13 @@ h3 {
   text-align: center;
   margin-bottom: 60px;
   height: 80vh;
+  margin-left:20px;
+  margin-right:20px;
 }
-
+/* .initial-text > div p:nth-child(1),
+.initial-text >div p:nth-child(2){
+  font-size: 20px;
+} */
 .initial-text h1 {
   margin-bottom: 60px;
   font-style: italic;
@@ -98,17 +102,10 @@ h3 {
   margin-left: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  padding-left: 20px;
-  padding-right: 20px;
+
 }
 
-/* .menu-icons > div {
-  margin: 30px;
-} */
-
 .menu-icons div p {
-  color: black;
-  font-size: 15px;
   margin-top: 20px;
 }
 
@@ -116,15 +113,10 @@ h3 {
   height: 30px;
 }
 
-/* .menu-icons > div:nth-child(4) > p {
-  margin-top: 5px;
-} */
-
 .county-fun-facts {
   display: flex;
   column-gap: 40px;
-  justify-content: space-evenly;
-  /* prije je tu bilo center a dole margin-left right */
+
 }
 /* .county-fun-facts >div {
   width: 150px;
@@ -156,6 +148,9 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   opacity: 0.7;
+
+  font-size: 20px;
+
 }
 
 .county-fun-facts div {
@@ -200,7 +195,6 @@ h3 {
   /* align-items: center; */
 }
 .dish-2 {
-  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -209,6 +203,7 @@ h3 {
 
 .Istria-dish {
   display: flex;
+  height: 80vh;
 }
 
 .Istria-dish img {
@@ -222,7 +217,7 @@ h3 {
 }
 
 .image-S-D-c {
-  background: url(./images/maincourse/splitnovi.1.jpg) center bottom/contain
+  background: url(./images/maincourse/splitnovi.1.jpg) center 20% / contain
     no-repeat;
   height: 80vh;
   display: flex;
@@ -233,7 +228,7 @@ h3 {
 }
 
 .image-D-N-c {
-  background: url(./images/maincourse/dubrovniknovi1.jpg) center top/contain
+  background: url(./images/maincourse/dubrovniknovi1.jpg) center 35% / contain
     no-repeat;
   height: 70vh;
   display: flex;
@@ -242,9 +237,9 @@ h3 {
 }
 
 .image-I-P-c {
-  background: url(./images/maincourse/istraipag.jpg) center bottom/contain
+  background: url(./images/maincourse/istraipag.jpg) center 40%/contain
     no-repeat;
-  
+
   height: 70vh;
   display: flex;
   flex-direction: column;
@@ -254,14 +249,13 @@ h3 {
 }
 
 .image-C-C {
-  background: url(./images/maincourse/kontinentalnova1.jpg) center top/contain
+  background: url(./images/maincourse/kontinentalnova1.jpg) center 25%/contain
     no-repeat;
   height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /* margin-left: 150px;
-  margin-right: 150px; */
+
 }
 
 .image-H {
@@ -281,15 +275,21 @@ h3 {
 
 .goat-tomato img:nth-child(1) {
   align-self: flex-end;
-  height: 120px;
-  width: 170px;
+  margin-right: -35px;
+  /* height: 120px;
+  width: 170px; */
+  height: 80px;
+  width: 130px;
 }
 
 .goat-tomato img:nth-of-type(2) {
   align-self: flex-start;
   margin-top: -60px;
-  height: 200px;
-  width: 150px;
+  margin-left: -30px;
+  /* height: 200px;
+  width: 150px; */
+  height: 160px;
+  width: 110px;
 }
 
 .goat-tomato p:nth-child(2) {
@@ -298,22 +298,23 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
+  .dish img {
+    width: 50%;
+  }s
   .food-menu a {
     font-size: 12px;
   }
-  .initial-text p,
+  /* .initial-text p,
   .regions p {
     font-size: 14px;
-  }
-  h1 {
+  } */
+  /* h1 {
     font-size: 18px;
   }
   h2 {
     font-size: 16px;
-  }
-  h3 {
-    font-size: 16px;
-  }
+  } */
+
   .menu-icons div p {
     font-size: 12px;
   }
@@ -337,24 +338,111 @@ h3 {
   /* text-decoration-color: red; */
 }
 
-.ketikaproba {
+/* .ketikaproba {
   text-decoration: underline;
 
   color: red;
 }
 .fh5co-nav p:not(.ketikaproba) {
   color: black;
-}
+} */
 
 @media screen and (max-width: 480px) {
-  .menu-icons {
-    flex-wrap: wrap;
+  .image-S-D-c {
+    justify-content: start;
   }
-  .menu-icons > div {
-    margin: 5px;
+  .image-S-D-c .county-fun-facts > div:nth-child(1),
+  .image-S-D-c .county-fun-facts > div:nth-child(3) {
+    display: none;
   }
-  /* .menu-icons >div:nth-child(3){
-  flex-basis: 100%;
-
+  .food-menu a {
+    font-size: 10px;
+  }
+  .food-menu li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .initial-text > div:first-of-type p {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  /* .starters-county .County-two-dishes>div:nth-child(2){
+  height: 100%;
 } */
+ 
 }
+@media screen and (max-width: 480px) {
+  .image-D-N-c {
+    justify-content: start;
+  }
+  .image-D-N-c .county-fun-facts > div:nth-child(1) {
+    display: none;
+  }
+  .image-D-N-c .county-fun-facts {
+    flex-direction: column;
+  }
+  .image-I-P-c {
+    justify-content: start;
+  }
+  .image-I-P-c .county-fun-facts div:nth-child(1),
+  .image-I-P-c .county-fun-facts div:nth-child(2),
+  .image-I-P-c .county-fun-facts div:nth-child(3)
+  {
+    display: none;
+  }
+  /* .addit-desc{
+    justify-content: start;
+  } */
+.Istria-dish{
+  flex-direction: column;
+}
+
+.image-C-C .county-fun-facts div:nth-child(2),
+.image-C-C .county-fun-facts div:nth-child(3),
+.image-C-C  div:nth-child(2)
+{
+  display: none;
+}
+
+/* .image-C-C{
+  height: 50vh;
+} */
+.image-C-C{
+  justify-content: start;
+}
+
+.img-turkey{
+  height: 30%;
+}
+.image-H{
+  justify-content: start;
+}
+.image-H .county-fun-facts div:nth-child(1),
+.Rastika{
+  display: none;
+}
+.goat-tomato img:nth-child(1){
+  height: 80px;
+ width: 100px;
+ /* padding-left: 60px; */
+ margin-right: -60px;
+
+}
+.goat-tomato img:nth-child(3){
+  height: 100px;
+ width: 75px;
+ /* padding-left: 60px; */
+ margin-left:-60px;
+
+}
+
+.Istria-dish .dish-2:nth-child(1) >div p:nth-child(2){
+  height: 80px ;
+}
+
+.regions > div > div {
+  height: auto;
+}
+}
+
+

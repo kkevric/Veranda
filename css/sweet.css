@@ -1,19 +1,23 @@
-/* h4{
-  font-size: 20px;
+h3 {
+  height: 40px;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
   opacity: 0.7;
-} */
+
+  font-size: 20px;
+}
 .sweet-dish > div p:nth-child(1) {
   font-size: 16px;
   opacity: 0.7;
- 
 }
 .sweet-dish > div p:nth-child(2) {
   font-size: 16px;
   opacity: 0.5;
   font-style: italic;
   width: 350px;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
   height: 120px;
 }
 .sweet-dish > div p:nth-child(3) {
@@ -22,7 +26,7 @@
 }
 .viewport-img-sweet-homepage {
   background: url(../images/slatko/naslovnica\ slatkog\ menija_crop.jpg) center
-   bottom/cover no-repeat;
+    bottom/cover no-repeat;
   height: 93vh;
 }
 
@@ -50,10 +54,10 @@
   margin: 0;
   list-style: none;
   margin-left: 25px;
-  margin-right:25px;
+  margin-right: 25px;
 }
 
-.food-menu a{
+.food-menu a {
   color: black;
   font-variant: small-caps;
   font-size: 14px;
@@ -69,26 +73,24 @@
 
 .regions {
   text-align: center;
-  margin-left:80px;
+  margin-left: 80px;
   margin-right: 80px;
 }
 
 .sweet-dish {
   height: 80vh;
   display: flex;
-  margin-bottom:35px;
+  margin-bottom: 35px;
 }
 
 .sweet-dish > div {
   flex: 1;
-
 }
 .sweet-dish img {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
-
 
 .sweet-dish div:nth-child(2) img {
   border-bottom-right-radius: 50px;
@@ -105,16 +107,20 @@
 
 .smokva-maslina img:nth-child(1) {
   align-self: flex-start;
-  height: 170px;
-  width: 120px;
+  /* height: 170px;
+  width: 120px; */
+  height: 130px;
+  width: 80px;
   margin-top: -60px;
 }
 
 .smokva-maslina img:nth-of-type(2) {
   align-self: flex-end;
   margin-top: -60px;
-  height: 200px;
-  width: 150px;
+  /* height: 200px;
+  width: 150px; */
+  height: 160px;
+  width: 110px;
 }
 
 .smokva-maslina div > p {
@@ -133,15 +139,29 @@
   font-style: italic;
 }
 
-.food-menu li:nth-child(4){
+.food-menu li:nth-child(4) {
   text-decoration: underline;
   /* text-decoration-color: red; */
 }
 
 @media screen and (max-width: 768px) {
-.sweet-dish {
-  /* flex-wrap: wrap; */
-  flex-direction: column;
-  height: 180vh;
+  .food-menu {
+    top: 0;
+  }
 }
+
+@media screen and (max-width: 480px) {
+  .food-menu a {
+    font-size: 10px;
+  }
+  .food-menu li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .sweet-dish {
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    height: auto;
+  }
 }
