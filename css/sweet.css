@@ -4,24 +4,20 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   opacity: 0.7;
-
   font-size: 20px;
 }
 .sweet-dish > div p:nth-child(1) {
-  font-size: 16px;
   opacity: 0.7;
 }
 .sweet-dish > div p:nth-child(2) {
-  font-size: 16px;
   opacity: 0.5;
   font-style: italic;
-  width: 350px;
+  max-width: 350px;
   margin-left: auto;
   margin-right: auto;
   height: 120px;
 }
 .sweet-dish > div p:nth-child(3) {
-  font-size: 16px;
   font-style: italic;
 }
 .viewport-img-sweet-homepage {
@@ -29,7 +25,6 @@ h3 {
     bottom/cover no-repeat;
   height: 93vh;
 }
-
 .food-menu {
   display: flex;
   color: black;
@@ -48,7 +43,6 @@ h3 {
   top: 7vh;
   z-index: 10;
 }
-
 .food-menu li {
   padding: 0;
   margin: 0;
@@ -56,13 +50,32 @@ h3 {
   margin-left: 25px;
   margin-right: 25px;
 }
-
 .food-menu a {
   color: black;
   font-variant: small-caps;
   font-size: 14px;
 }
-
+.food-menu li:nth-child(4) {
+  text-decoration: underline;
+  /* text-decoration-color: red; */
+}
+.regions {
+  text-align: center;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.regions > div:nth-child(1),
+.regions > div:nth-child(2){
+  display: table;
+  height: 80vh;
+  width: 100%;
+}
+.regions > div:nth-child(1) > div,
+.regions > div:nth-child(2) > div{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
 .regions img {
   border-bottom-left-radius: 50px;
   border-top-right-radius: 50px;
@@ -70,19 +83,10 @@ h3 {
   display: block;
   margin-bottom: 30px;
 }
-
-.regions {
-  text-align: center;
-  margin-left: 80px;
-  margin-right: 80px;
-}
-
 .sweet-dish {
-  height: 80vh;
   display: flex;
-  margin-bottom: 35px;
+  /* margin-bottom: 35px; */
 }
-
 .sweet-dish > div {
   flex: 1;
 }
@@ -91,77 +95,102 @@ h3 {
   margin-left: auto;
   margin-right: auto;
 }
-
 .sweet-dish div:nth-child(2) img {
   border-bottom-right-radius: 50px;
   border-top-left-radius: 50px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
 }
-
 .smokva-maslina {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  height: 80vh;
+  align-items: center;
 }
-
 .smokva-maslina img:nth-child(1) {
   align-self: flex-start;
   /* height: 170px;
   width: 120px; */
   height: 130px;
   width: 80px;
-  margin-top: -60px;
+  margin-top: 120px;
 }
-
 .smokva-maslina img:nth-of-type(2) {
   align-self: flex-end;
-  margin-top: -60px;
+  margin-bottom: 140px;
   /* height: 200px;
   width: 150px; */
   height: 160px;
   width: 110px;
 }
-
 .smokva-maslina div > p {
   font-size: 16px;
   opacity: 0.7;
 }
-
 .smokva-maslina div p:nth-child(2) {
-  font-size: 16px;
   opacity: 0.5;
   font-style: italic;
 }
-
 .smokva-maslina div p:nth-child(3) {
-  font-size: 16px;
   font-style: italic;
 }
 
-.food-menu li:nth-child(4) {
-  text-decoration: underline;
-  /* text-decoration-color: red; */
-}
 
 @media screen and (max-width: 768px) {
   .food-menu {
     top: 0;
   }
-}
-
-@media screen and (max-width: 480px) {
-  .food-menu a {
-    font-size: 10px;
+  .sweet-dish {
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    height: 160vh;
+    justify-content: space-around;
   }
+  .sweet-dish > div p:nth-child(2) {
+    height: 140px;
+  }
+  .sweet-dish > div:nth-child(2) p:nth-child(2) {
+    height: 70px;
+  }
+
   .food-menu li {
     margin-left: 10px;
     margin-right: 10px;
   }
 
-  .sweet-dish {
-    /* flex-wrap: wrap; */
-    flex-direction: column;
-    height: auto;
+  .sweet-dish > div {
+    flex: none;
   }
+  .smokva-maslina {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  .smokva-maslina img:nth-child(1) {
+    align-self: flex-start;
+    /* height: 170px;
+    width: 120px; */
+    height: 130px;
+    width: 80px;
+    margin-top: 120px;
+    margin-right: -50px;
+  }
+  .smokva-maslina img:nth-of-type(2) {
+    align-self: flex-end;
+    margin-bottom: 120px;
+    margin-left: -65px;
+
+    /* height: 200px;
+    width: 150px; */
+    height: 160px;
+    width: 110px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .food-menu a {
+    font-size: 10px;
+  }
+
+  
 }

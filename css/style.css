@@ -432,6 +432,9 @@ figure {
 .descri img {
   width: 100%;
 }
+.descri img:nth-child(2) {
+  display: none;
+}
 
 .open-hours-container {
   border: none !important;
@@ -446,12 +449,13 @@ figure {
 .open-hours {
   position: absolute;
   left: 50%;
+  /* in order to center horizontally, set margin-left to half of width*/
   margin-left: -150px;
-  top: 25%;
+  top: 15%;
   width: 300px;
   height: 300px;
   border-radius: 150px;
-  background-color: rgb(97, 103, 65);
+  background-color: rgb(49, 52, 33);
   border: none;
   /* used to center multi-line text vertically and horizontally*/
   display: table;
@@ -668,19 +672,10 @@ figure {
 }
 
 #fh5co-location {
-  /* min-width: 320px;
-  display: block;
- 
-  justify-content: center; */
-  /* padding-left: 50px;
-  padding-right: 50px;
-  margin-top: 80px; */
-  /* margin-top:9vh; */
-  /* height: 100vh; */
-  /* margin-top:50px; */
+  height: 93vh;
 }
 .google-wrapper {
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
@@ -695,7 +690,7 @@ figure {
   margin-right: 25px;
   /* width: 33px;
   height:23px; */
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 /* .fb-inst img:nth-child(1){
   width: 30px;
@@ -741,10 +736,7 @@ figure {
 }
 
 .about-container > div > div {
-  /* top: 50%; */
-  /* transform: translateY(50%); */
-  margin-top: 100px;
-  /* margin-bottom: 50%; */
+  transform: translateY(60%);
   margin-left: 10px;
   margin-right: 10px;
   max-width: 380px;
@@ -757,6 +749,7 @@ figure {
   width: 100%;
   border-bottom-left-radius: 50px;
 }
+
 .about-container > div {
   flex: 1;
 }
@@ -2106,6 +2099,36 @@ textarea {
   .google-maps {
     height: 250px;
   }
+
+  .about-container {
+    justify-content: center;
+    align-items: center;
+  }
+  .about-container > div {
+    flex: none;
+  }
+  .about-container > div > div {
+    transform: translateY(0%);
+  }
+
+  .about-container > div:nth-child(2) {
+    display: none;
+  }
+  #fh5co-location {
+    height: auto;
+  }
+  .open-hours-container {
+    height: 120vh;
+  }
+  .open-hours {
+    height: 220px;
+    width: 220px;
+    margin-left: -110px;
+  }
+  .lady-image {
+    height: 150vh;
+    /* margin-top:150px */
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -2140,18 +2163,6 @@ textarea {
     top: 31px;
   }
 
-  .about-container {
-    /* flex-wrap: wrap; */
-    flex-direction: column;
-    height: auto;
-  }
-  .about-container > div:nth-child(1) {
-    margin-bottom: 50px;
-  }
-  .lady-image {
-    height: 150vh;
-    /* margin-top:150px */
-  }
   .fb-inst a:nth-child(1) img {
     width: 20px;
     height: 25px;
@@ -2169,5 +2180,17 @@ textarea {
     height: 20px;
     width: 20px;
     margin-bottom: 5px;
+  }
+
+  .descri img {
+    /* width: 100%; */
+    /* background: url(../images/homepage.materijal/homeallamenew.png) center top/cover no-repeat; */
+  }
+
+  .descri img:nth-child(1) {
+    display: none;
+  }
+  .descri img:nth-child(2) {
+    display: block;
   }
 }

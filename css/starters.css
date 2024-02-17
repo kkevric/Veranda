@@ -1,7 +1,6 @@
 h1 {
   font-size: 28px;
 }
-
 h2 {
   font-size: 20px;
 }
@@ -13,7 +12,6 @@ h3 {
   opacity: 0.7;
 
   font-size: 20px;
-
 }
 
 .viewport-img-starter-homepage {
@@ -21,7 +19,6 @@ h3 {
     bottom/cover no-repeat;
   height: 93vh;
 }
-
 .food-menu {
   display: flex;
   color: black;
@@ -41,7 +38,6 @@ h3 {
   z-index: 10;
   pointer-events: visible;
 }
-
 .food-menu li {
   padding: 0;
   margin: 0;
@@ -49,13 +45,20 @@ h3 {
   margin-left: 25px;
   margin-right: 25px;
 }
-
+.food-menu li:nth-child(1) {
+  text-decoration: underline;
+  /* text-decoration-color: red; */
+}
 .food-menu a {
   color: black;
   /* font-variant: small-caps; */
   font-size: 14px;
 }
-
+.regions {
+  text-align: center;
+  margin-left: 80px;
+  margin-right: 80px;
+}
 .regions img {
   border-bottom-left-radius: 50px;
   border-top-right-radius: 50px;
@@ -66,19 +69,21 @@ h3 {
   width: 25%;
   margin-bottom: 30px;
 }
-
-.regions {
+.starters-county {
+  height: 80vh;
+  display: table;
+}
+.starters-county > div {
+  display: table-cell;
+  vertical-align: middle;
   text-align: center;
 }
-
 .County-two-dishes {
   display: flex;
 }
-
 .County-two-dishes > div {
   flex: 1;
 }
-
 .County-two-dishes img {
   width: 50%;
   margin-left: auto;
@@ -90,7 +95,6 @@ h3 {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
 }
-
 .County-two-dishes > div p:nth-child(1),
 .County-one-dish > div p:nth-child(1),
 .exception-dish > div p:nth-child(1) {
@@ -99,16 +103,13 @@ h3 {
   margin-right: auto;
   opacity: 0.7;
 }
-
 .County-two-dishes > div p:nth-child(1),
 .exception-dish > div p:nth-child(1) {
   height: 40px;
 }
-
 .County-one-dish > div p:nth-child(1) {
   height: 30px;
 }
-
 .County-two-dishes > div p:nth-child(2),
 .County-one-dish > div p:nth-child(2),
 .exception-dish > div p:nth-child(2) {
@@ -118,12 +119,11 @@ h3 {
   margin-left: auto;
   margin-right: auto;
 }
-
-.starters-county {
-  height: 80vh;
-  margin-bottom: 50px;
-  margin-left: 80px;
-  margin-right: 80px;
+.starters-county:nth-child(1) .County-two-dishes > div > div p:nth-child(2) {
+  height: 90px;
+}
+.starters-county:nth-child(5) .County-two-dishes > div > div p:nth-child(2) {
+  height: 140px;
 }
 
 /* because if set margin, background is black*/
@@ -132,70 +132,78 @@ h3 {
   margin-bottom: 0;
 } */
 
-.food-menu li:nth-child(1) {
-  text-decoration: underline;
-  /* text-decoration-color: red; */
-}
-
 .exception-dish > div {
   display: flex;
 }
-
 .exception-dish > div > div {
   flex: 1;
 }
-
-.exception-dish > div:nth-child(2) p:nth-child(2){
+.exception-dish > div:nth-child(2) p:nth-child(2) {
   height: 120px;
-
 }
 
+.gyoco {
+  /* height: 150px; */
 
+  margin-bottom: 20px;
+}
 @media screen and (max-width: 768px) {
   .County-two-dishes {
     flex-direction: column;
+    justify-content: space-evenly;
+    height: 160vh;
+    margin-top: -120px;
+   
   }
-  .starters-county {
-    height: auto;
-  }
-  .food-menu{
-  
-    top:0;
-   }
-}
 
-@media screen and (max-width: 480px) {
-  .food-menu{
-  
-    top:0vh;
-  }
-  .food-menu a {
-    font-size: 10px;
-  }
 
   .food-menu li {
     margin-left: 10px;
     margin-right: 10px;
   }
-
+  .County-one-dish {
+    height: 80vh;
+  }
+  .starters-county {
+    height: auto;
+  }
+  .food-menu {
+    top: 0vh;
+  }
+  .food-menu li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   .County-one-dish img {
     width: 50%;
   }
-
-  .starters-county .County-two-dishes > div:nth-child(2) {
-    height: 100%;
+  .starters-county:nth-child(1)
+    .County-two-dishes
+    > div:nth-child(2)
+    > div
+    p:nth-child(2) {
+    height: 40px;
   }
-
-  .exception-dish > div:nth-child(2) p:nth-child(2){
-    height:250px;
-
+  .starters-county:nth-child(5)
+    .County-two-dishes
+    > div:nth-child(2)
+    > div
+    p:nth-child(2) {
+    height: 80px;
   }
-  .exception-dish > div{
+  .exception-dish > div:nth-child(2) p:nth-child(2) {
+    height: 250px;
+  }
+  .exception-dish > div {
     column-gap: 20px;
   }
-  .starters-county:nth-child(4){
-    margin-left:40px;
-    margin-right: 40px;
-  }
 
+  .County-two-dishes > div {
+    flex: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .food-menu a {
+    font-size: 10px;
+  }
 }

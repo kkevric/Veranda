@@ -25,29 +25,49 @@
   border: 2px solid #f0ad4e;
 }
 
-#hors-hydra-8750c0c0-f349-11ea-84ce-e97786f1e792{
-  margin-left:-30%;
- /* display: block; */
- margin-right: 15%;
-
+#hors-hydra-8750c0c0-f349-11ea-84ce-e97786f1e792 {
+  margin-left: -30%;
+  /* display: block; */
+  margin-right: 15%;
 }
-@media screen and (max-width: 480px) {
-  .reservation-container{
+
+@media screen and (max-width: 768px) {
+  .reservation-container {
+    flex-direction: column;
+    height: 180vh;
+    margin-top:0;
+  }
+  .img-reservation {
+    background: url(../images/rezervacija/Veranda\ II-32.jpg) center
+      bottom/cover no-repeat;
+  }
+
+  #hors-hydra-8750c0c0-f349-11ea-84ce-e97786f1e792 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reservation-container {
     flex-direction: column;
     height: 160vh;
   }
   .img-reservation {
-    background: url(../images/rezervacija/Veranda\ II-32.jpg) center center/cover
-      no-repeat;
-
+    background: url(../images/rezervacija/Veranda\ II-32.jpg) center
+    80%/cover no-repeat;
   }
 
-  #hors-hydra-8750c0c0-f349-11ea-84ce-e97786f1e792{
-    margin-left:auto;
-    margin-right:auto;
+  #hors-hydra-8750c0c0-f349-11ea-84ce-e97786f1e792 {
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 50px;
     margin-bottom: 50px;
   }
 
-
+  .reservation-container > div {
+    flex: 1;
+  }
 }
