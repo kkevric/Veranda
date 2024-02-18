@@ -1,10 +1,10 @@
-.katja {
+.outerbox {
   display: table;
   position: absolute;
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
-.kk {
+.box {
   display: table-cell;
   vertical-align: middle;
   background-color: white;
@@ -16,15 +16,12 @@
   height: 93vh;
 }
 .about-memories {
-  display: flex;
-  color: black;
-  justify-content: center;
+  text-align: center;
   background-color: white;
   height: 13vh;
   border: none;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  align-items: center;
   margin-top: -13vh;
   padding-left: 0;
   /* position: -webkit-sticky;*/
@@ -34,9 +31,9 @@
   z-index: 1;
   /* z index sam dodala  zbog opacityja je rmi onda tekst prolazi iznad food menija i vidi se sav tekst */
 }
-.about-memories p{
+.about-memories p {
   font-size: 20px;
-  margin: 0;
+  padding-top: 30px;
 }
 
 .gallery-container {
@@ -58,7 +55,7 @@
   height: 70%;
 }
 .gallery-container p {
-font-size:24px;
+  font-size: 24px;
   text-align: center;
   padding-top: 50px;
 }
@@ -86,8 +83,15 @@ font-size:24px;
 
 @media screen and (max-width: 768px) {
   .gallery-container {
-    height: 200px;
+    height: auto;
     column-gap: 30px;
+  }
+  .gallery-container > a {
+    height: 290px;
+  }
+
+  .about-memories p {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -96,9 +100,10 @@ font-size:24px;
     row-gap: 40px;
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 50px;
   }
 
-  .kk {
+  .outerbox {
     display: inherit;
   }
 }

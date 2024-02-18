@@ -4,15 +4,12 @@
 }
 
 .about-memories {
-  display: flex;
-  color: black;
-  justify-content: center;
+  text-align: center;
   background-color: white;
   height: 13vh;
   border: none;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  align-items: center;
   margin-top: -13vh;
   padding-left: 0;
   /* position: -webkit-sticky;*/
@@ -22,10 +19,9 @@
   z-index: 1;
   /* z index sam dodala  zbog opacityja je rmi onda tekst prolazi iznad food menija i vidi se sav tekst */
 }
-
 .about-memories p {
   font-size: 20px;
-  margin: 0;
+  padding-top: 35px;
 }
 
 .memories-image {
@@ -58,7 +54,6 @@
   margin: 0;
   margin-right: 250px;
   font-family: "Libre Baskerville", serif;
-
   margin-left: 50px;
 }
 
@@ -99,7 +94,6 @@
   margin-bottom: 0;
   padding-right: 20px;
   padding-left: 20px;
-  
 }
 
 .beginning {
@@ -115,7 +109,7 @@
 .beginning div:nth-child(1) img {
   width: 90%;
   margin-top: -100px;
-  margin-bottom:50px;
+  margin-bottom: 50px;
   z-index: 1;
   position: relative;
 }
@@ -129,15 +123,14 @@
   height: 100vh;
   /* margin-bottom: 50px; */
   background: url(../images/about/Veranda\ II-290.jpg) center center/cover
-  no-repeat;
+    no-repeat;
   /* background-size: 100vw 100vh;
   min-height: 100vh; */
 }
 .img_2 {
   height: 100vh;
   /* margin-bottom: 50px; */
-  background: url(../images/aboutsve/tetkaNev.jpg) center top/cover
-  no-repeat;
+  background: url(../images/aboutsve/tetkaNev.jpg) center top/cover no-repeat;
   position: relative;
   /* background-size: 100vw 100vh;
   min-height: 100vh; */
@@ -145,8 +138,7 @@
 .img_4 {
   height: 120vh;
   /* margin-bottom: 50px; */
-  background: url(../images/aboutsve/mIm.jpg) center top/cover
-  no-repeat;
+  background: url(../images/aboutsve/mIm.jpg) center top/cover no-repeat;
   /* background-size: 100vw 100vh;
   min-height: 100vh; */
   position: relative;
@@ -195,7 +187,7 @@
 .mirko {
   /* background-color:rgb(85,107,47); */
   /* background-color:rgb(99,125,55); */
-  
+
   background-color: rgb(49, 52, 33);
   width: 25%;
 
@@ -208,17 +200,14 @@
   border-bottom-right-radius: 30px;
 }
 
-.mirko > div{
+.mirko > div {
   padding-top: 40px;
   padding-left: 20px;
   padding-right: 20px;
-  
 }
-.mirko p:nth-child(1){
+.mirko p:nth-child(1) {
   font-size: 13px;
   line-height: 1.8;
-  
-  
 }
 h3 {
   margin-top: 40px;
@@ -250,24 +239,23 @@ padding-bottom: 20px; */
   text-transform: uppercase;
   font-size: 12px;
   line-height: 1.8;
- 
 }
- .mama h3{
+.mama h3 {
   color: black;
   opacity: 0.5;
   letter-spacing: 2px;
- }
-.mirko p,h3{
+}
+.mirko p,
+h3 {
   color: white;
 }
-.mirko >div p:nth-child(1){
+.mirko > div p:nth-child(1) {
   text-transform: uppercase;
   /* margin-left: 20px;
   margin-right: 20px;
   margin-top: 35px */
 }
-.mirko >div p:nth-child(2){
- 
+.mirko > div p:nth-child(2) {
   /* margin-left: 20px;
   margin-right: 20px;
   margin-top: 35px */
@@ -284,7 +272,8 @@ padding-bottom: 20px; */
   height: 120vh;
 }
 .img_5 {
-  background: url(../images/aboutsve/marinasjenanova.png) 30% top/cover no-repeat;
+  background: url(../images/aboutsve/marinasjenanova.png) 30% top/cover
+    no-repeat;
   /* background-size: 100vw 100vh;
   min-height: 100vh; */
   position: relative;
@@ -305,10 +294,10 @@ padding-bottom: 20px; */
 
 .img_3 p,
 .img_5 p {
-  color: rgb(251,145,48);
+  color: rgb(251, 145, 48);
 }
 
-.img_3, 
+.img_3,
 .img_5 {
   position: relative;
 }
@@ -320,14 +309,17 @@ padding-bottom: 20px; */
   margin-bottom: 0;
 }
 
-.img_3 > div:nth-child(1)
- {
-  width: 350px;
-  height: 50vh;
+.img_3 > div {
   position: absolute;
-  top: 55%;
-  left: 8%;
-  padding-right: 30px;
+  top: 50%;
+  width: 90%;
+}
+.img_3 > div > div {
+  display: flex;
+  justify-content: space-evenly;
+}
+.img_3 > div > div > div {
+  width: 350px;
 }
 .img_5 > div {
   width: 350px;
@@ -344,18 +336,9 @@ padding-bottom: 20px; */
   right: 38%;
   top: 18%;
 }
-@media screen and (max-width: 768px) {
-  .img_Luka > div {
-    width: 300px;
-    padding-right: 50px;
-  }
-}
 .lukica {
-  position: absolute;
-  top: 50%;
-  right: 30%;
   border-radius: 50px;
-  max-width: 450px;
+  max-width: 350px;
 }
 .marina {
   position: absolute;
@@ -363,35 +346,90 @@ padding-bottom: 20px; */
   left: 7%;
   border-radius: 50px;
   max-width: 350px;
- 
+}
+.about-memories p {
+  font-size: 16px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .about-box {
+    width: 100%;
+  }
+  .memories-image div:nth-child(2) img:nth-child(1) {
+    width: 150px;
+    top: 40%;
+    right: 5%;
+  }
+
+  .memories-image div:nth-child(2) img:nth-child(2) {
+    width: 150px;
+    top: 48%;
+    right: 0;
+  }
+
+  .memories-image div:nth-child(2) img:nth-child(3) {
+    width: 200px;
+    top: 62%;
+    left: 15%;
+  }
+  .img_3 > div {
+    left: 5%;
+  }
+  .img_3 > div > div {
+    justify-content: center;
+  }
+  .img_Luka > div {
+    width: 300px;
+    padding-right: 50px;
+  }
+  .about-box p {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .marina,
+  .img_Mirko,
+  .img_3 > div > div > div:nth-child(2),
+  .luka_slova,
+  .img_Nevenka {
+    display: none;
+  }
+  .mirko {
+    width: 50%;
+  }
 }
 
 
 
 @media screen and (max-width: 480px) {
- 
-.img_4{
-  /* width:60%; */
-  background: url(../images/aboutsve/mIm.jpg) right top/cover
-no-repeat;
-}
+  .memories-image div:nth-child(2) img:nth-child(1) {
+    width: 100px;
+    top: 45%;
+    right: 5%;
+  }
+
+  .memories-image div:nth-child(2) img:nth-child(2) {
+    width: 100px;
+    top: 50%;
+    right: 0;
+  }
+
+  .memories-image div:nth-child(2) img:nth-child(3) {
+    width: 150px;
+    top: 62%;
+    left: 15%;
+  }
+  .img_4 {
+    /* width:60%; */
+    background: url(../images/aboutsve/mIm.jpg) right top/cover no-repeat;
+  }
+
+  .mama {
+    width: 70%;
+  }
+  .beginning {
+    flex-direction: column;
+  }
 
 
-.mama{
-  width: 70%;
-}
-.beginning{
-  flex-direction: column;
-}
-.marina,
-.img_Mirko,
-.lukica,
-.luka_slova,
-.img_Nevenka{
-  display: none;
-}
-.mirko
-{
-  width: 50%;
-}
 }

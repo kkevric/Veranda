@@ -2129,12 +2129,11 @@ textarea {
     height: 150vh;
     /* margin-top:150px */
   }
+
+
 }
 
 @media screen and (max-width: 480px) {
-  .fh5co-nav {
-    position: absolute;
-  }
   .fh5co-nav.scrolled {
     background: transparent;
   }
@@ -2176,11 +2175,7 @@ textarea {
     width: 22px;
     height: 16px;
   }
-  .veranda-box img {
-    height: 20px;
-    width: 20px;
-    margin-bottom: 5px;
-  }
+
 
   .descri img {
     /* width: 100%; */
@@ -2192,5 +2187,10 @@ textarea {
   }
   .descri img:nth-child(2) {
     display: block;
+  }
+  .veranda-box img {
+    height: 20px;
+    width: 20px;
+    margin-bottom: 5px;
   }
 }

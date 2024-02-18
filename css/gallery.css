@@ -2,7 +2,7 @@
   display: table;
   position: absolute;
 }
-.kk {
+.box{
   display: table-cell;
   vertical-align: middle;
 }
@@ -56,15 +56,23 @@
 }
 @media screen and (max-width: 480px) {
   .gallery-container {
+    height: auto;
     grid-template-columns: 1fr;
     row-gap: 40px;
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 100px;
+    margin-bottom: 50px;
   }
 
-  .kk {
-    display: inherit;
-    background-color: white;
+  .gallery-container > a {
+    height: 250px;
   }
+
+  .box {
+    display: inherit;
+
+  }
+
+  
 }
