@@ -1,3 +1,6 @@
+.restaurant{
+  margin-top:40px;
+}
 .gallery-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -6,17 +9,11 @@
     margin-left: 100px;
     margin-right: 100px;
     /* margin-top:50px; */
- 
   }
   img {
     border: solid;
     width: 100%;
   }
-  
-  p {
-    margin-top: 50px;
-  }
-  
   .myImages {
     border-radius: 5px;
     cursor: pointer;
@@ -25,7 +22,6 @@
     margin-left: auto;
     margin-right: auto;
   }
-  
   .myImages:hover {
     opacity: 0.7;
   }
@@ -43,7 +39,6 @@
     background-color: rgb(0, 0, 0); /* Fallback color */
     background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
   }
-  
   /* Modal Content (image) */
   .modal-content {
     margin: auto;
@@ -51,21 +46,17 @@
     width: 60%;
     max-width: 80%;
   }
-  
   .modal-content {
     animation-name: zoom;
     animation-duration: 0.6s;
   }
-  
   .out {
     animation-name: zoom-out;
     animation-duration: 0.6s;
   }
-
   .fh5co-nav-toggle {
     display: none;
   }
-  
   @keyframes zoom {
     from {
       transform: scale(0);
@@ -74,7 +65,6 @@
       transform: scale(1);
     }
   }
-  
   @keyframes zoom-out {
     from {
       transform: scale(1);
@@ -83,11 +73,9 @@
       transform: scale(0);
     }
   }
-
   #fh5co-offcanvas{
     height:100vh;
   }
-
   /* 100% Image Width on Smaller Screens */
   @media only screen and (max-width: 768px){
     .modal-content {
@@ -106,7 +94,6 @@
   }
     /* 100% Image Width on Smaller Screens */
     @media only screen and (max-width: 480px){
-
       .gallery-container{
         grid-template-columns: 1fr 1fr ;
         margin-left: 10px;

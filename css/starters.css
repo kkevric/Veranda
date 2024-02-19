@@ -10,10 +10,8 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   opacity: 0.7;
-
   font-size: 20px;
 }
-
 .viewport-img-starter-homepage {
   background: url(../images/starters/naslovnicastarters_crop.jpeg) center
     bottom/cover no-repeat;
@@ -47,11 +45,9 @@ h3 {
 }
 .food-menu li:nth-child(1) {
   text-decoration: underline;
-  /* text-decoration-color: red; */
 }
 .food-menu a {
   color: black;
-  /* font-variant: small-caps; */
   font-size: 14px;
 }
 .regions {
@@ -60,8 +56,8 @@ h3 {
   margin-right: 80px;
 }
 .regions img {
-  border-bottom-left-radius: 20%;
-  border-top-right-radius: 15%;
+  border-bottom-left-radius: 2em 2em;
+  border-top-right-radius: 2em 2em;
   margin-top: 30px;
   display: block;
   margin-left: auto;
@@ -91,7 +87,7 @@ h3 {
 }
 .County-two-dishes div:nth-child(2) img {
   border-bottom-right-radius: 2em 2em;
-  border-top-left-radius: 15%;
+  border-top-left-radius: 2em 2em;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
 }
@@ -125,47 +121,25 @@ h3 {
 .starters-county:nth-child(5) .County-two-dishes > div > div p:nth-child(2) {
   height: 140px;
 }
-
-/* because if set margin, background is black*/
-/* .starters-county:last-child {
-  height: 100vh;
-  margin-bottom: 0;
-} */
-
-.exception-dish > div {
+/* .exception-dish > div {
   display: flex;
-}
-.exception-dish > div > div {
+} */
+/* .exception-dish > div > div {
   flex: 1;
-}
-.exception-dish > div:nth-child(2) p:nth-child(2) {
+} */
+/* .exception-dish > div:nth-child(2) p:nth-child(2) {
   height: 120px;
-}
-
+} */
 .gyoco {
-  /* height: 150px; */
-
   margin-bottom: 20px;
 }
+
 @media screen and (max-width: 768px) {
   .County-two-dishes {
     flex-direction: column;
     justify-content: space-evenly;
     height: 160vh;
     margin-top: -120px;
-   
-  }
-
-
-  .food-menu li {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .County-one-dish {
-    height: 80vh;
-  }
-  .starters-county {
-    height: auto;
   }
   .food-menu {
     top: 0vh;
@@ -174,8 +148,14 @@ h3 {
     margin-left: 10px;
     margin-right: 10px;
   }
+  .County-one-dish {
+    height: 80vh;
+  }
   .County-one-dish img {
     width: 50%;
+  }
+  .starters-county {
+    height: auto;
   }
   .starters-county:nth-child(1)
     .County-two-dishes
@@ -191,12 +171,12 @@ h3 {
     p:nth-child(2) {
     height: 80px;
   }
-  .exception-dish > div:nth-child(2) p:nth-child(2) {
+  /* .exception-dish > div:nth-child(2) p:nth-child(2) {
     height: 250px;
   }
   .exception-dish > div {
     column-gap: 20px;
-  }
+  } */
 
   .County-two-dishes > div {
     flex: none;

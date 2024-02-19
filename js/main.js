@@ -47,23 +47,23 @@
     );
     var clone1 = $(".menu-1 > ul").clone();
     $("#fh5co-offcanvas").append(clone1);
-    var clone2 = $(".menu-2 > ul").clone();
-    $("#fh5co-offcanvas").append(clone2);
+    // var clone2 = $(".menu-2 > ul").clone();
+    // $("#fh5co-offcanvas").append(clone2);
 
-    $("#fh5co-offcanvas .has-dropdown").addClass("offcanvas-has-dropdown");
-    $("#fh5co-offcanvas").find("li").removeClass("has-dropdown");
+    // $("#fh5co-offcanvas .has-dropdown").addClass("offcanvas-has-dropdown");
+    // $("#fh5co-offcanvas").find("li").removeClass("has-dropdown");
 
     // Hover dropdown menu on mobile
-    $(".offcanvas-has-dropdown")
-      .mouseenter(function () {
-        var $this = $(this);
+    // $(".offcanvas-has-dropdown")
+    //   .mouseenter(function () {
+    //     var $this = $(this);
 
-        $this.addClass("active").find("ul").slideDown(500, "easeOutExpo");
-      })
-      .mouseleave(function () {
-        var $this = $(this);
-        $this.removeClass("active").find("ul").slideUp(500, "easeOutExpo");
-      });
+    //     $this.addClass("active").find("ul").slideDown(500, "easeOutExpo");
+    //   })
+    //   .mouseleave(function () {
+    //     var $this = $(this);
+    //     $this.removeClass("active").find("ul").slideUp(500, "easeOutExpo");
+    //   });
 
     $(window).resize(function () {
       if ($("body").hasClass("offcanvas")) {
@@ -75,13 +75,20 @@
 
   var burgerMenu = function () {
     $("body").on("click", ".js-fh5co-nav-toggle", function (event) {
+      const header = document.querySelector("header");
+      const mobileMenu = document.querySelector("#fh5co-offcanvas");
       var $this = $(this);
 
       if ($("body").hasClass("overflow offcanvas")) {
         $("body").removeClass("overflow offcanvas");
+        // header.style.marginTop = "0";
+        // mobileMenu.style.display = "none";
       } else {
         $("body").addClass("overflow offcanvas");
+        // header.style.marginTop = "7.65vh";
+        // mobileMenu.style.display = "block";
       }
+
       $this.toggleClass("active");
       event.preventDefault();
     });

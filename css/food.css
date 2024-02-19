@@ -1,3 +1,7 @@
+.food{
+  margin-top:40px;
+}
+
 .gallery-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -12,10 +16,6 @@ img {
   border: solid;
   width: 100%;
   border-radius: 40px;
-}
-
-p {
-  margin-top: 50px;
 }
 
 .myImages {

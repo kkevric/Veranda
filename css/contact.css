@@ -10,7 +10,6 @@
 }
 
 .food-menu {
-  /* font-size: 20px; */
   display: flex;
   color: black;
   justify-content: center;
@@ -28,7 +27,6 @@
   z-index: 1;
   /* z index sam dodala  zbog opacityja je rmi onda tekst prolazi iznad food menija i vidi se sav tekst */
 }
-
 .food-menu li {
   padding: 0;
   margin: 0;
@@ -39,7 +37,6 @@
 .food-menu a {
   color: black;
 }
-
 .contact-box {
   display: flex;
   justify-content: space-evenly;
@@ -53,15 +50,12 @@
   height: 13vh;
   position: absolute;
 }
-
 .contact-box > a:nth-child(1) img:hover {
   content: url("../images/homepage.materijal/Property\ 1=Variant2.jpg");
 }
-
 .veranda-box > a:nth-child(3) img:hover {
   content: url("../images/homepage.materijal/Property\ 1=Variant2\ \(2\).jpg");
 }
-
 .fb-inst {
   /* display: inline-block; */
   text-align: center;
@@ -70,22 +64,20 @@
 .fb-inst img {
   margin-left: 30px;
   margin-right: 30px;
-
 }
-
 .phone {
   width: 31px;
-  height: 35px;
+  height: 25px;
   margin-bottom: 5px;
 }
-
 .mail {
   margin-bottom: 5px;
+  width: 25px;
 }
 
 .contact-location-container {
-  height: 93vh;
-  margin-top: 100px;
+  height: auto;
+  /* margin-top: 100px; */
 }
 
 .fb-inst > a:nth-child(1) img:hover {
@@ -98,23 +90,22 @@
   content: url("../images/homepage.materijal/tripadvhov.jpg");
 }
 
-
+@media screen and (max-width: 768px) {
+  .phone {
+    width: 26px;
+    height: 20px;
+    margin-bottom: 5px;
+  }
+  .mail {
+    margin-bottom: 5px;
+    width: 20px;
+  }
+  
+}
 
 @media screen and (max-width: 480px) {
-  .mail {
-    width: 25px;
-  }
-  .phone {
-    height: 25px;
-  }
   .contact-box p {
     font-size: 14px;
   }
-  /* .fb-ins {
-    width: 25px;
-  } */
-  /* .inst {
-    width: 20px;
-    height: 25px;
-  } */
+
 }
