@@ -7,7 +7,6 @@
 .food-menu {
   display: flex;
   color: black;
-  /* margin: 5px 0 0 0; */
   justify-content: center;
   background-color: white;
   height: 13vh;
@@ -41,7 +40,6 @@
 }
 
 .wine-container div img {
-  /* height: 120%; */
   width: 100%;
   border-bottom-left-radius: 50px;
 }
@@ -61,10 +59,7 @@
 .wine-container div:nth-child(2) p:nth-child(1) {
   text-transform: uppercase;
 }
-/* .wine-container p{
-    margin-left:25%;
-    font-size: 20px;
-  } */
+
 
 .wine-video {
   max-width: 80%;
@@ -79,7 +74,6 @@
 
 .food-menu li:nth-child(5) {
   text-decoration: underline;
-  /* text-decoration-color: red; */
 }
 .wine-text {
   text-align: center;
@@ -119,10 +113,6 @@
   .food-menu li {
     margin-left: 10px;
     margin-right: 10px;
-  }
-
-  .food-menu {
-    top: 0vh;
   }
 
   .wine-video {

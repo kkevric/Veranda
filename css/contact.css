@@ -57,9 +57,7 @@
   content: url("../images/homepage.materijal/Property\ 1=Variant2\ \(2\).jpg");
 }
 .fb-inst {
-  /* display: inline-block; */
   text-align: center;
-  /* height: 93vh; */
 }
 .fb-inst img {
   margin-left: 30px;
@@ -77,7 +75,6 @@
 
 .contact-location-container {
   height: auto;
-  /* margin-top: 100px; */
 }
 
 .fb-inst > a:nth-child(1) img:hover {

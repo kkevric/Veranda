@@ -106,27 +106,6 @@ h3 {
   font-size: 14px;
 }
 
-/* .vege-dish-1 {
-  height: 80vh;
-  margin-left: 50px;
-  margin-right: 50px;
-  position: relative;
-} */
-/* .vege-dish-1 > div {
-  display: flex;
-  column-gap: 70px;
-} */
-/* .vege-dish-1 > div:nth-child(2) {
-  margin-bottom: 60px;
-} */
-/* .vege-dish-1 > div:nth-child(4) {
-  margin-bottom: 60px;
-} */
-
-/* .vege-dish-1 > div > div {
-  flex: 1;
-} */
-
 .vege-dish-1 > div > div > p:nth-child(2) {
   opacity: 0.5;
   font-style: italic;
@@ -137,22 +116,8 @@ h3 {
   font-style: italic;
 }
 
-/* .vege-dish-1 > div:nth-child(1) > div:nth-child(1) {
-  padding-left: 100px;
-}
-.vege-dish-1 > div:nth-child(2) > div:nth-child(1) {
-  padding-left: 100px;
-}
-.vege-dish-1 > div:nth-child(1) > div:nth-child(3) {
-  padding-right: 100px;
-}
-.vege-dish-1 > div:nth-child(2) > div:nth-child(3) {
-  padding-right: 100px;
-} */
-
 .sir {
   position: absolute;
-  /* background: url(../images/vege/sireviillu.jpg) center top/cover no-repeat; */
   top: -5%;
   width: 180px;
   left: -5%;
@@ -209,9 +174,6 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
-  .food-menu {
-    top: 0vh;
-  }
   .food-menu li {
     margin-left: 10px;
     margin-right: 10px;

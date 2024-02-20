@@ -62,13 +62,13 @@ h3 {
   margin-right: 80px;
 }
 .regions > div:nth-child(1),
-.regions > div:nth-child(2){
+.regions > div:nth-child(2) {
   display: table;
   height: 80vh;
   width: 100%;
 }
 .regions > div:nth-child(1) > div,
-.regions > div:nth-child(2) > div{
+.regions > div:nth-child(2) > div {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
@@ -128,11 +128,7 @@ h3 {
   font-style: italic;
 }
 
-
 @media screen and (max-width: 768px) {
-  .food-menu {
-    top: 0;
-  }
   .sweet-dish {
     flex-direction: column;
     height: 160vh;
@@ -175,6 +171,4 @@ h3 {
   .food-menu a {
     font-size: 10px;
   }
-
-  
 }

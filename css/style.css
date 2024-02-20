@@ -6,25 +6,11 @@
 * ======================================================= */
 body {
   font-family: "Baskervville", serif;
-  /* line-height: 1.7; */
   color: rgba(255, 255, 255, 0.3);
-  /* background: white url(../images/broken_noise.png) repeat;
-  margin: 0; */
-  /* width:1440px;
-  margin-left: auto;
-  margin-right: auto; */
+
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* body {
-    background: white url(../images/broken_noise.png) repeat;
-  } */
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .fh5co-nav.scrolled {
-    /* background: #000 url(../images/broken_noise.png) repeat; */
-  }
-}
+
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   #fh5co-offcanvas {
     background: white;
@@ -33,7 +19,7 @@ body {
 
 #page {
   position: relative;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   width: 100%;
   height: 100%;
   -webkit-transition: 0.5s;
@@ -42,7 +28,7 @@ body {
   background-color: white;
 }
 .offcanvas #page {
-  overflow: hidden;
+  /* overflow-x: hidden; */
   position: absolute;
 }
 
@@ -89,7 +75,6 @@ h6,
 figure {
   color: #000;
   font-family: "Baskervville", serif;
-  /* font-weight: 400; */
   margin: 0 0 20px 0;
 }
 
@@ -116,13 +101,10 @@ figure {
   background: white;
   z-index: 1001;
   top: 0;
-  /* padding: 14px 0; */
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  /* display: flex;
-  justify-content: space-evenly;
-  align-items: center; */
+
 }
 
 .fh5co-nav-images {
@@ -133,15 +115,10 @@ figure {
   transition: 0.5s;
 }
 
-.fh5co-nav.scrolled {
-  /* background: #000 url(../images/broken_noise.png) repeat; */
-  /* top: -82px; */
-}
 
 .fh5co-nav ul {
   display: flex;
   align-items: center;
-  /* justify-content: space-evenly; */
   margin: 5px 0 0 0;
   padding: 0;
   height: 7vh;
@@ -158,7 +135,6 @@ figure {
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 10px 15px;
-  /* color: black; */
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -168,7 +144,7 @@ figure {
 .fh5co-nav ul li p {
   margin: 0;
   font-size: 14px;
-  /* color: #8a8a8a; */
+  color:rgb(97, 103, 65)
 }
 
 .fh5co-nav ul li.has-dropdown {
@@ -269,10 +245,6 @@ figure {
 .fh5co-cover {
   margin-top: 7vh;
   position: relative;
-}
-
-.fh5co-cover .display-tc button {
-  /* margin-top: 650px; */
 }
 
 #fh5co-header .display-t,
@@ -397,22 +369,6 @@ figure {
   position: relative;
 }
 
-/* .image-pozadina {
-  background: url(../images/homepage.materijal/hptekstpozadina-2.jpg) center
-    top/cover no-repeat;
-  position: absolute;
-  top: 20%;
-  left: 15%;
-  width: 50vh;
-  height: 50vh;
-  border: none;
-  border-top-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  display: flex;
-  align-items: center;
-  opacity: 0.5;
-} */
-
 .descri {
   position: absolute;
   left: 0;
@@ -429,9 +385,7 @@ figure {
 
 .open-hours-container {
   border: none !important;
-  /* padding: 50em; */
   height: 200vh;
-  /* margin-top: 9vh;zasto to ne radi */
   background: url(../images/homepage.materijal/homepage4.jpg) center
     bottom/cover no-repeat;
   position: relative;
@@ -460,13 +414,6 @@ figure {
   vertical-align: middle;
 }
 
-/* .fh5co-section p {
-  color: rgba(255, 255, 255, 0.3);
-
-  line-height: 1.5;
-} */
-
-/*  nema */
 .section-heading {
   width: 100%;
   float: left;
@@ -568,7 +515,6 @@ figure {
 
 #fh5co-featured-testimony {
   border: none !important;
-  /* padding: 50em; */
   height: 250vh;
   margin-bottom: 50px;
   background: url(../images/homepage.materijal/Screenshot\ 2023-11-13\ at\ 15.45.34.png)
@@ -578,7 +524,6 @@ figure {
 .lady-image {
   position: relative;
   height: 250vh;
-  /* margin-bottom: 50px; */
   background: url(../images/homepage.materijal/Screenshot\ 2023-11-13\ at\ 15.45.34.png)
     center top/cover no-repeat;
 }
@@ -609,9 +554,7 @@ figure {
 .welcome-image p {
   font-size: 16px;
 }
-/* .welcome-image p:nth-child(2){
-  font-size: 20px;
-} */
+
 .gif{
   width: 50%;
   position: absolute;
@@ -619,7 +562,6 @@ figure {
 }
 #fh5co-featured-veranda {
   border: none !important;
-  /* padding: 50em; */
   height: 93vh;
   position: relative;
   background: url(../images/homepage.materijal/homepage5_crop.jpg) center
@@ -659,9 +601,7 @@ figure {
 
 #fh5co-featured-hours {
   border: none !important;
-  /* padding: 50em; */
   height: 200vh;
-  /* margin-top: 9vh;zasto to ne radi */
   background: url(../images/homepage.materijal/homepage4.jpg) center
     bottom/cover no-repeat;
 }
@@ -683,22 +623,9 @@ figure {
 .fb-inst img {
   margin-left: 25px;
   margin-right: 25px;
-  /* width: 33px;
-  height:23px; */
   margin-bottom: 50px;
 }
-/* .fb-inst img:nth-child(1){
-  width: 30px;
-  height: 35px;
-}
-.fb-inst  img:nth-child(2){
-  width: 33px;
-  height: 33px;
-}
-.fb-inst img:nth-child(3){
-  width: 33px;
-  height: 23px;
-} */
+
 
 .fb-inst a:nth-child(1) img {
   width: 30px;
@@ -757,7 +684,6 @@ figure {
 
 .about-container p {
   font-size: 16px;
-  /* vertical-align: center; */
 }
 .about-container a {
   color: white;
@@ -786,7 +712,6 @@ figure {
   height: 35px;
   width: 35px;
   margin-bottom: 5px;
-  /* opacity: 0.8; */
 }
 .veranda-box > a:nth-child(1) img:hover {
   content: url("../images/homepage.materijal/Property\ 1=Variant2.jpg");
@@ -799,12 +724,10 @@ figure {
 }
 
 #fh5co-location div a {
-  /* display: inline-block; */
   margin-left: auto;
   margin-right: auto;
 }
 .fb-inst {
-  /* display: inline-block; */
   text-align: center;
 }
 
@@ -1299,11 +1222,7 @@ figure {
   -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.06);
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.06);
 }
-@media screen and (max-width: 768px) {
-  /* .about-container{
-    flex-direction: column;
-  } */
-}
+
 .fh5co-team h2 {
   font-size: 16px;
   letter-spacing: 2px;
@@ -1632,12 +1551,7 @@ figure {
   transition: 0.5s;
   padding: 8px 20px;
 }
-/* .btn.btn-md {
-  padding: 8px 20px !important;
-} */
-/* .btn.btn-lg {
-  padding: 10px 36px !important;
-} */
+
 .btn:hover,
 .btn:active,
 .btn:focus {
@@ -1721,10 +1635,6 @@ figure {
   color: #fff;
 }
 .text-open {
-  /* position: absolute;
-  top: 15%; */
-  /* left: 50%; */
-  /* margin-left: -110px; */
   padding-top: 5%;
   text-align: center;
   font-size: 40px;
@@ -1882,30 +1792,13 @@ textarea {
   background: url(../images/loader.gif) center no-repeat #fff;
 }
 
-/* .js .animate-box {
-  opacity: 0;
-} */
-
 .bootstrap-datetimepicker-widget {
   color: #000 !important;
 }
 
-/*# sourceMappingURL=style.css.map */
-
-/* .activeLink{
-  text-decoration: underline;
-  color:red;
- 
-} */
-
-/* .fh5co-nav p:not(.ketikaproba) { 
-  color: black; 
-  
-}  */
 
 .currentpage {
   font-weight: 600;
-  /* opacity: 0.6; */
 }
 
 
@@ -1971,10 +1864,6 @@ textarea {
     background-position: center center;
     background-attachment: scroll;
   }
-  /* #fh5co-header,
-  .fh5co-cover {
-    padding: 3em 0;
-  } */
   #fh5co-header .display-t,
   .fh5co-cover .display-t {
     padding: 3em 0;
@@ -1988,13 +1877,6 @@ textarea {
     font-size: 42px;
     line-height: 50px;
   }
-  /* atributes on the two following classes are added to remove navigation bar when scrolling on mobile */
-  /* .fh5co-nav {
-    position: inherit;
-  }
-  .fh5co-cover {
-    margin-top: 0;
-  } */
   #fh5co-header .display-tc .btn,
   .fh5co-cover .display-tc .btn {
     width: 80%;
@@ -2085,7 +1967,10 @@ textarea {
   .fh5co-nav-toggle {
     display: block;
     margin-top: -17px;
-    /* position: fixed; */
+    position: fixed;
+  }
+  #fh5co-offcanvas {
+    position: fixed;
   }
   #fh5co-offcanvas ul li:nth-child(4) a img {
     margin-bottom: 30px;
@@ -2124,7 +2009,6 @@ textarea {
   }
   .lady-image {
     height: 150vh;
-    /* margin-top:150px */
   }
   .fb-inst a:nth-child(1) img {
     width: 20px;
@@ -2144,9 +2028,6 @@ textarea {
 }
 
 @media screen and (max-width: 480px) {
-  .fh5co-nav.scrolled {
-    background: transparent;
-  }
   .col-xxs-12 {
     float: none;
     width: 100%;
@@ -2170,14 +2051,6 @@ textarea {
   }
   #fh5co-timeline .timeline > li > .timeline-panel:after {
     top: 31px;
-  }
-
-
-
-
-  .descri img {
-    /* width: 100%; */
-    /* background: url(../images/homepage.materijal/homeallamenew.png) center top/cover no-repeat; */
   }
 
   .descri img:nth-child(1) {
